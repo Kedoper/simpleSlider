@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>slider</title>
+    <style>
+        .s-wrap {
+            width: 900px;
+            height: 500px;
+        }
+    </style>
+    <link rel="stylesheet" href="slider.css">
+</head>
+<body>
+<div class="container">
+    <div class="s-wrap"></div>
+</div>
+</body>
+<script src="./slider.js"></script>
+<script>
+    let slider = new Slider(".s-wrap", [
+        './img/unnamed.png',
+        './img/unnamed1.png',
+        './img/unnamed2.png',
+        './img/unnamed3.png',
+    ], {
+        auto: {}
+    });
+</script>
+</html>
