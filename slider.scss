@@ -1,0 +1,100 @@
+$bg_whitout-img: #a5a5a5;
+$buttons_bg: #98989812;
+$buttons_text_color: #0000001a;
+
+$buttons_bg_hover: #00000047;
+$buttons_text_color_hover: #000000d1;
+
+
+.k {
+  &-wrap {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: $bg_whitout-img;
+  }
+
+  &-img_box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: $bg_whitout-img;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    &__slider {
+      position: absolute;
+      display: flex;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      right: 0;
+
+      &-items {
+        position: absolute;
+        top: 0;
+        display: -webkit-box;
+        padding: 0;
+        margin: 0;
+        width: inherit;
+        height: inherit;
+        list-style: none;
+        transition-duration: 600ms;
+        transition-property: left;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.8, 1.01);
+      }
+    }
+  }
+  &-controls {
+    display: flex;
+    z-index: 999999;
+    height: inherit;
+    width: 15%;
+  }
+
+  &-button {
+    width: 100%;
+    height: 100%;
+    background: $buttons_bg;
+    color: $buttons_text_color;
+    border: none;
+    font-size: 60pt;
+    outline: none;
+    transition: background-color .3s, color .3s;
+
+    & > svg path {
+      fill: $buttons_text_color;
+    }
+
+    &:hover {
+      background: $buttons_bg_hover;
+      color: $buttons_text_color_hover;
+
+      & > svg path {
+        fill: $buttons_text_color_hover;
+      }
+    }
+
+    &__back > svg {
+      transform: rotate(-180deg);
+    }
+  }
+
+  &-slider-items {
+    width: inherit;
+    height: inherit;
+
+    & > img {
+      width: inherit;
+      height: inherit;
+    }
+  }
+}

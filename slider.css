@@ -1,0 +1,70 @@
+.k-wrap {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #a5a5a5; }
+.k-img_box {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #a5a5a5;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+  .k-img_box__slider {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0; }
+    .k-img_box__slider-items {
+      position: absolute;
+      top: 0;
+      display: -webkit-box;
+      padding: 0;
+      margin: 0;
+      width: inherit;
+      height: inherit;
+      list-style: none;
+      transition-duration: 600ms;
+      transition-property: left;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.8, 1.01); }
+.k-controls {
+  display: flex;
+  z-index: 999999;
+  height: inherit;
+  width: 15%; }
+.k-button {
+  width: 100%;
+  height: 100%;
+  background: #98989812;
+  color: #0000001a;
+  border: none;
+  font-size: 60pt;
+  outline: none;
+  transition: background-color .3s, color .3s; }
+  .k-button > svg path {
+    fill: #0000001a; }
+  .k-button:hover {
+    background: #00000047;
+    color: #000000d1; }
+    .k-button:hover > svg path {
+      fill: #000000d1; }
+  .k-button__back > svg {
+    transform: rotate(-180deg); }
+.k-slider-items {
+  width: inherit;
+  height: inherit; }
+  .k-slider-items > img {
+    width: inherit;
+    height: inherit; }
+
+/*# sourceMappingURL=slider.css.map */
