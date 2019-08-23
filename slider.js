@@ -92,7 +92,7 @@ class Slider {
             next_position = 0;
             par.dataset.activeSlider = 0;
         } else {
-            next_position = parseInt(now_position) - 900;
+            next_position = parseInt(now_position) - parseInt(par.offsetWidth);
             par.dataset.activeSlider = new_slide_id;
         }
         par.style.left = `${next_position}px`;
@@ -108,7 +108,7 @@ class Slider {
             next_position = -parseInt(par.offsetWidth) * this.max_slider_id;
             par.dataset.activeSlider = this.max_slider_id;
         } else {
-            next_position = parseInt(now_position) + 900;
+            next_position = parseInt(now_position) + parseInt(par.offsetWidth);
             par.dataset.activeSlider = new_slide_id;
         }
         par.style.left = `${next_position}px`;
