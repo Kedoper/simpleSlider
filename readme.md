@@ -48,3 +48,5 @@ Look like this
     '/patch/to/image3'
 ]
 ```
+
+[DEMO](https://kedoper.github.io/simpleSlider/demo)
